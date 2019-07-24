@@ -17,8 +17,8 @@ function currentLine(line){
   for(var i = 0; i < line.length; i++){
   }
   if(line.length === 0){
-    return "The line is!";
+    return "The line is currently empty!";
   } else{
-    return (`Currently serving ${katzDeliLine.shift()}.`);
+    return (`The line is currently: ${line.shift()}.`);
   }
 }
