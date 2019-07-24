@@ -4,5 +4,9 @@ function takeANumber(katzDeli, name) {
 }
 
 function nowServing(){
-
+  if(nowServing < 1){
+    return `There is nobody waiting to be served!`;
+  } else{
+    return `Currently serving ${name}.`;
+  }
 }
