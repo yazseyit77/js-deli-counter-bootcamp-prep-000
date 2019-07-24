@@ -4,7 +4,10 @@ function takeANumber(katzDeli, name) {
 }
 
 function nowServing(katzDeli){
-  if(katzDeli.length; < 1){
+  for(var i = 0; i < katzDeli.length; i++){
+    line.push(` `+[i+1]+`. `  + katzDeli[i])
+  }
+  if(katzDeli.length === 0){
     return "There is nobody waiting to be served!";
   } else{
     return (`Currently serving ${katzDeli.shift()}.`);
